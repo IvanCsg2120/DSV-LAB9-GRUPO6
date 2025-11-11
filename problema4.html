@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 4 - Promedio de Estudiantes</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Problema 4 - Promedio de Estudiantes</h1>
+            <p class="subtitle">Laboratorio 9 - JavaScript Básico 2</p>
+        </header>
+
+        <main class="problem-container">
+            <div class="problem-header">
+                <h2><i class="fas fa-user-graduate"></i> Promedio de Notas para N Estudiantes</h2>
+                <p>Ingrese la cantidad de estudiantes y luego las dos notas de cada uno para calcular sus promedios</p>
+            </div>
+
+            <div class="problem-content">
+                <div class="input-group">
+                    <label for="studentCount">Cantidad de estudiantes:</label>
+                    <input type="number" id="studentCount" min="1" max="20" placeholder="Ingrese la cantidad de estudiantes (1-20)">
+                    <div class="error" id="errorStudentCount"></div>
+                </div>
+                
+                <div class="button-group">
+                    <button id="setupStudents">
+                        <i class="fas fa-users"></i> Configurar Estudiantes
+                    </button>
+                    <button id="clearStudents" class="secondary">
+                        <i class="fas fa-broom"></i> Limpiar Todo
+                    </button>
+                </div>
+                
+                <div id="studentInputs" class="student-inputs"></div>
+                
+                <div class="button-group" id="calculateButtonGroup" style="display: none;">
+                    <button id="calculateAverages">
+                        <i class="fas fa-chart-bar"></i> Calcular Promedios
+                    </button>
+                </div>
+                
+                <div class="result" id="averagesResult">
+                    <h3><i class="fas fa-trophy"></i> Resultados:</h3>
+                    <div id="averagesText"></div>
+                </div>
+
+                <div class="instructions">
+                    <h4><i class="fas fa-lightbulb"></i> Instrucciones:</h4>
+                    <ol>
+                        <li>Ingrese la cantidad de estudiantes</li>
+                        <li>Haga clic en "Configurar Estudiantes"</li>
+                        <li>Ingrese las dos notas (0-100) para cada estudiante en los campos que aparecerán</li>
+                        <li>Haga clic en "Calcular Promedios" para obtener los resultados</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="back-home">
+                <a href="index.html" class="home-button">
+                    <i class="fas fa-home"></i> Volver al Menú Principal
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Desarrollo de Software V - Universidad Tecnológica de Panamá</p>
+            <p>© 2025 - Todos los derechos reservados</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

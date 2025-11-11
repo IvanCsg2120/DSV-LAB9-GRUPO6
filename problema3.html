@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 3 - Total de Compra</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Problema 3 - Total de Compra</h1>
+            <p class="subtitle">Laboratorio 9 - JavaScript Básico 2</p>
+        </header>
+
+        <main class="problem-container">
+            <div class="problem-header">
+                <h2><i class="fas fa-shopping-cart"></i> Total de Compra en Supermercado</h2>
+                <p>Ingrese la cantidad de productos y luego el precio de cada uno para calcular el total a pagar</p>
+            </div>
+
+            <div class="problem-content">
+                <div class="input-group">
+                    <label for="productCount">Cantidad de productos:</label>
+                    <input type="number" id="productCount" min="1" max="50" placeholder="Ingrese la cantidad de productos (1-50)">
+                    <div class="error" id="errorCount"></div>
+                </div>
+                
+                <div class="button-group">
+                    <button id="setupProducts">
+                        <i class="fas fa-cogs"></i> Configurar Productos
+                    </button>
+                    <button id="clearCart" class="secondary">
+                        <i class="fas fa-broom"></i> Limpiar Todo
+                    </button>
+                </div>
+                
+                <div id="productInputs" class="product-inputs"></div>
+                
+                <div class="button-group" id="calculateButtonGroup" style="display: none;">
+                    <button id="calculateTotal">
+                        <i class="fas fa-cash-register"></i> Calcular Total
+                    </button>
+                </div>
+                
+                <div class="result" id="totalResult">
+                    <h3><i class="fas fa-receipt"></i> Resultado:</h3>
+                    <p id="totalText"></p>
+                </div>
+
+                <div class="instructions">
+                    <h4><i class="fas fa-lightbulb"></i> Instrucciones:</h4>
+                    <ol>
+                        <li>Ingrese la cantidad de productos diferentes que ha comprado</li>
+                        <li>Haga clic en "Configurar Productos"</li>
+                        <li>Ingrese el precio de cada producto en los campos que aparecerán</li>
+                        <li>Haga clic en "Calcular Total" para obtener el resultado</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="back-home">
+                <a href="index.html" class="home-button">
+                    <i class="fas fa-home"></i> Volver al Menú Principal
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Desarrollo de Software V - Universidad Tecnológica de Panamá</p>
+            <p>© 2025 - Todos los derechos reservados</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

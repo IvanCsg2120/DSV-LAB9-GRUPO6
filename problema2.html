@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 2 - Día de la Semana</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Problema 2 - Día de la Semana</h1>
+            <p class="subtitle">Laboratorio 9 - JavaScript Básico 2</p>
+        </header>
+
+        <main class="problem-container">
+            <div class="problem-header">
+                <h2><i class="fas fa-calendar-day"></i> Identificación del Día de la Semana</h2>
+                <p>Ingrese un número del 1 al 7 para identificar el día de la semana correspondiente</p>
+            </div>
+
+            <div class="problem-content">
+                <div class="input-group">
+                    <label for="dayNumber">Número del día (1-7):</label>
+                    <input type="number" id="dayNumber" min="1" max="7" placeholder="Ingrese un número del 1 al 7">
+                    <div class="error" id="errorDay"></div>
+                </div>
+                
+                <div class="button-group">
+                    <button id="findDay">
+                        <i class="fas fa-search"></i> Identificar Día
+                    </button>
+                    <button id="clearDay" class="secondary">
+                        <i class="fas fa-broom"></i> Limpiar
+                    </button>
+                </div>
+                
+                <div class="result" id="dayResult">
+                    <h3><i class="fas fa-calendar-check"></i> Resultado:</h3>
+                    <p id="dayText"></p>
+                </div>
+
+                <div class="scale-info">
+                    <h4><i class="fas fa-list-ol"></i> Correspondencia de Días:</h4>
+                    <ul>
+                        <li>1: Lunes</li>
+                        <li>2: Martes</li>
+                        <li>3: Miércoles</li>
+                        <li>4: Jueves</li>
+                        <li>5: Viernes</li>
+                        <li>6: Sábado</li>
+                        <li>7: Domingo</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="back-home">
+                <a href="index.html" class="home-button">
+                    <i class="fas fa-home"></i> Volver al Menú Principal
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Desarrollo de Software V - Universidad Tecnológica de Panamá</p>
+            <p>© 2025 - Todos los derechos reservados</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
